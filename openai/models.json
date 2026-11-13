@@ -2,15 +2,15 @@
   "providerSlug": "openai",
   "models": [
     {
-      "modelId": "gpt-5.5",
-      "name": "GPT-5.5",
+      "modelId": "gpt-6-astra",
+      "name": "GPT-6 Astra",
       "category": "CHAT",
       "supportsVision": true,
       "supportsTools": true,
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text",
@@ -19,7 +19,97 @@
       "sortOrder": 1,
       "isRecommended": true,
       "isDeprecated": false,
-      "description": "Frontier model for coding and professional work"
+      "description": "Flagship model for the most demanding reasoning, coding, and computer-use work",
+      "maxContextTokens": 1050000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "modelId": "gpt-6.1-sol",
+      "name": "GPT-6.1 Sol",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 2,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Near-Astra performance for complex work at a lower cost",
+      "maxContextTokens": 1050000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "modelId": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "category": "CODE",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 3,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Coding and agentic workflows. GPT-6.1 Sol is the newer Sol model",
+      "maxContextTokens": 1050000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "modelId": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 4,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Most efficient model for focused, high-volume tasks",
+      "maxContextTokens": 1050000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "modelId": "gpt-5.5",
+      "name": "GPT-5.5",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 10,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Frontier model for coding and professional work",
+      "maxContextTokens": 1050000,
+      "maxOutputTokens": 128000
     },
     {
       "modelId": "gpt-5.5-pro",
@@ -30,16 +120,18 @@
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text",
         "image"
       ],
-      "sortOrder": 2,
+      "sortOrder": 11,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "Smarter, more precise GPT-5.5 variant"
+      "description": "Higher-compute GPT-5.5 variant for harder problems",
+      "maxContextTokens": 1050000,
+      "maxOutputTokens": 128000
     },
     {
       "modelId": "gpt-5.4",
@@ -50,16 +142,18 @@
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text",
         "image"
       ],
-      "sortOrder": 3,
-      "isRecommended": true,
+      "sortOrder": 12,
+      "isRecommended": false,
       "isDeprecated": false,
-      "description": "More affordable frontier-class model for coding and professional work"
+      "description": "Frontier-class model for coding and professional work",
+      "maxContextTokens": 1050000,
+      "maxOutputTokens": 128000
     },
     {
       "modelId": "gpt-5.4-pro",
@@ -70,16 +164,16 @@
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text",
         "image"
       ],
-      "sortOrder": 4,
+      "sortOrder": 13,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "Smarter, more precise GPT-5.4 variant"
+      "description": "Higher-compute GPT-5.4 variant"
     },
     {
       "modelId": "gpt-5.4-mini",
@@ -90,16 +184,16 @@
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text",
         "image"
       ],
-      "sortOrder": 5,
+      "sortOrder": 14,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "Strong mini model for coding, computer use, and subagents"
+      "description": "Smaller GPT-5.4 model for coding and computer use"
     },
     {
       "modelId": "gpt-5.4-nano",
@@ -110,138 +204,19 @@
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text",
         "image"
       ],
-      "sortOrder": 6,
+      "sortOrder": 15,
       "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Cheapest GPT-5.4-class model for simple high-volume tasks"
-    },
-    {
-      "modelId": "gpt-5-mini",
-      "name": "GPT-5 Mini",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 7,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Near-frontier intelligence for cost-sensitive, low-latency, high-volume workloads"
-    },
-    {
-      "modelId": "gpt-5-nano",
-      "name": "GPT-5 Nano",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 8,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Fastest, most cost-efficient GPT-5-class variant"
-    },
-    {
-      "modelId": "gpt-5",
-      "name": "GPT-5",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 9,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Previous intelligent reasoning model for coding and agentic tasks (configurable reasoning effort)"
-    },
-    {
-      "modelId": "gpt-4.1",
-      "name": "GPT-4.1",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 10,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Smartest non-reasoning model in the frontier lineup; strong instruction following and tool use",
-      "maxContextTokens": 1047576,
-      "maxOutputTokens": 32768
-    },
-    {
-      "modelId": "gpt-5-pro",
-      "name": "GPT-5 Pro",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 11,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "GPT-5 variant focused on smarter, more precise responses"
-    },
-    {
-      "modelId": "gpt-5.3-codex",
-      "name": "GPT-5.3 Codex",
-      "category": "CODE",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 12,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Most capable agentic coding model (Codex family)"
+      "isDeprecated": true,
+      "description": "Smallest GPT-5.4 model",
+      "deprecationMessage": "Deprecated by OpenAI. Support ends 1 Apr 2027. Prefer gpt-6-luna.",
+      "supportEndsAt": "2027-04-01",
+      "replacedByModelId": "gpt-6-luna"
     },
     {
       "modelId": "gpt-5.2",
@@ -252,16 +227,16 @@
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text",
         "image"
       ],
-      "sortOrder": 13,
+      "sortOrder": 20,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "Previous frontier model for professional work with configurable reasoning effort"
+      "description": "Previous frontier model, still in active support"
     },
     {
       "modelId": "gpt-5.2-pro",
@@ -272,224 +247,39 @@
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 14,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Previous pro frontier model with smarter, more precise responses"
-    },
-    {
-      "modelId": "gpt-5.1",
-      "name": "GPT-5.1",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 15,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Strong model for coding and agentic tasks with configurable reasoning effort"
-    },
-    {
-      "modelId": "gpt-4.1-mini",
-      "name": "GPT-4.1 Mini",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 16,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Smaller, faster variant of GPT-4.1",
-      "maxContextTokens": 1047576,
-      "maxOutputTokens": 32768
-    },
-    {
-      "modelId": "gpt-4.1-nano",
-      "name": "GPT-4.1 Nano",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 17,
-      "isRecommended": false,
-      "isDeprecated": true,
-      "description": "Fastest, most cost-efficient GPT-4.1-class variant",
-      "maxContextTokens": 1047576,
-      "maxOutputTokens": 32768,
-      "deprecationMessage": "Deprecated per OpenAI. Prefer gpt-5.4-nano or other current mini/nano frontier models."
-    },
-    {
-      "modelId": "gpt-4o",
-      "name": "GPT-4o",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "sortOrder": 18,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Multimodal model for text, images, and audio with 128K context",
-      "maxContextTokens": 128000,
-      "maxOutputTokens": 16384
-    },
-    {
-      "modelId": "gpt-4o-mini",
-      "name": "GPT-4o Mini",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 19,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Affordable small model for fast, lightweight tasks",
-      "maxContextTokens": 128000,
-      "maxOutputTokens": 16384
-    },
-    {
-      "modelId": "o3-mini",
-      "name": "o3 Mini",
-      "category": "REASONING",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": false,
       "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
-        "text"
-      ],
-      "sortOrder": 20,
-      "isRecommended": false,
-      "isDeprecated": true,
-      "description": "Smaller reasoning model in the o3 line",
-      "deprecationMessage": "Deprecated per OpenAI. Prefer gpt-5-mini or other current reasoning-capable models."
-    },
-    {
-      "modelId": "o1",
-      "name": "o1",
-      "category": "REASONING",
-      "supportsVision": true,
-      "supportsTools": false,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": false,
-      "supportsTemperature": false,
-      "supportsReasoning": true,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
+        "text",
+        "image"
       ],
       "sortOrder": 21,
       "isRecommended": false,
-      "isDeprecated": true,
-      "description": "Full o-series reasoning model (previous generation)",
-      "deprecationMessage": "Deprecated per OpenAI. Prefer GPT-5–class models."
+      "isDeprecated": false,
+      "description": "Higher-compute GPT-5.2 variant"
     },
     {
-      "modelId": "o1-mini",
-      "name": "o1 Mini",
-      "category": "REASONING",
+      "modelId": "gpt-5.3-codex",
+      "name": "GPT-5.3 Codex",
+      "category": "CODE",
       "supportsVision": true,
-      "supportsTools": false,
+      "supportsTools": true,
       "supportsTextStreaming": true,
-      "supportsToolStreaming": false,
-      "supportsTemperature": false,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
       "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
-        "text"
+        "text",
+        "image"
       ],
-      "sortOrder": 22,
+      "sortOrder": 30,
       "isRecommended": false,
       "isDeprecated": true,
-      "description": "Faster, cost-efficient o-series reasoning model (previous generation)",
-      "deprecationMessage": "Deprecated per OpenAI. Prefer GPT-5–class models."
-    },
-    {
-      "modelId": "text-embedding-3-large",
-      "name": "Text Embedding 3 Large",
-      "category": "EMBEDDING",
-      "supportsVision": false,
-      "supportsTools": false,
-      "supportsTextStreaming": false,
-      "supportsToolStreaming": false,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 40,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "High-quality embedding model for semantic search"
-    },
-    {
-      "modelId": "text-embedding-3-small",
-      "name": "Text Embedding 3 Small",
-      "category": "EMBEDDING",
-      "supportsVision": false,
-      "supportsTools": false,
-      "supportsTextStreaming": false,
-      "supportsToolStreaming": false,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 41,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Lower-cost embedding model"
+      "description": "Coding model",
+      "deprecationMessage": "Deprecated by OpenAI. Support ends 1 Apr 2027. Prefer gpt-6-sol.",
+      "supportEndsAt": "2027-04-01",
+      "replacedByModelId": "gpt-6-sol"
     }
   ]
 }

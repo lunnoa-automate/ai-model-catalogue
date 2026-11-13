@@ -2,8 +2,8 @@
   "providerSlug": "xai",
   "models": [
     {
-      "modelId": "grok-4",
-      "name": "Grok 4",
+      "modelId": "grok-4.7",
+      "name": "Grok 4.7",
       "category": "CHAT",
       "supportsVision": true,
       "supportsTools": true,
@@ -13,107 +13,98 @@
       "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
-        "text"
+        "text",
+        "image"
       ],
       "sortOrder": 1,
       "isRecommended": true,
       "isDeprecated": false,
-      "description": "xAI Grok latest generation reasoning model"
+      "description": "Flagship model for code, chat, and agentic tool calling",
+      "maxContextTokens": 500000
     },
     {
-      "modelId": "grok-3",
-      "name": "Grok 3",
-      "category": "CHAT",
-      "supportsVision": false,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 10,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Earlier Grok generation - coding-capable"
-    },
-    {
-      "modelId": "grok-3-mini",
-      "name": "Grok 3 Mini",
-      "category": "CHAT",
-      "supportsVision": false,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": false,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 11,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Mini variant for fast queries"
-    },
-    {
-      "modelId": "grok-2-latest",
-      "name": "Grok 2",
-      "category": "CHAT",
-      "supportsVision": false,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 20,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Grok 2 model"
-    },
-    {
-      "modelId": "grok-2-vision-latest",
-      "name": "Grok 2 Vision",
+      "modelId": "grok-4.6",
+      "name": "Grok 4.6",
       "category": "CHAT",
       "supportsVision": true,
       "supportsTools": true,
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
-        "text"
+        "text",
+        "image"
       ],
-      "sortOrder": 21,
+      "sortOrder": 2,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "Grok 2 with vision support"
+      "description": "Previous flagship, still on the API",
+      "maxContextTokens": 500000
     },
     {
-      "modelId": "grok-realtime",
-      "name": "Grok Realtime",
+      "modelId": "grok-4.5",
+      "name": "Grok 4.5",
       "category": "CHAT",
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "supportsTextStreaming": true,
-      "supportsToolStreaming": false,
+      "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
-        "text"
+        "text",
+        "image"
       ],
-      "sortOrder": 30,
+      "sortOrder": 3,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "Grok productized model for realtime Q&A"
+      "description": "Grok 4.5 for coding and agentic work",
+      "maxContextTokens": 500000
+    },
+    {
+      "modelId": "grok-4.3",
+      "name": "Grok 4.3",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 4,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Faster Grok with a 1M context window",
+      "maxContextTokens": 1000000
+    },
+    {
+      "modelId": "grok-build-0.1",
+      "name": "Grok Build 0.1",
+      "category": "CODE",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 10,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Coding model with a 256k context window",
+      "maxContextTokens": 256000
     }
   ]
 }

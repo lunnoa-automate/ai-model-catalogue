@@ -2,29 +2,30 @@
   "providerSlug": "huggingface",
   "models": [
     {
-      "modelId": "meta-llama-3-70b-instruct",
-      "name": "Llama 3 70B Instruct",
-      "category": "CHAT",
-      "supportsVision": false,
+      "modelId": "google/gemma-4-31B-it",
+      "name": "Gemma 4 31B IT",
+      "category": "MULTIMODAL",
+      "supportsVision": true,
       "supportsTools": true,
       "supportsTextStreaming": true,
       "supportsToolStreaming": false,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
-        "text"
+        "text",
+        "image"
       ],
       "sortOrder": 1,
-      "isRecommended": false,
+      "isRecommended": true,
       "isDeprecated": false,
-      "description": "Meta Llama 3 instruct"
+      "description": "Gemma 4 31B instruction model"
     },
     {
-      "modelId": "mistral-mixtral-8x7b",
-      "name": "Mistral Mixtral 8x7B",
+      "modelId": "Qwen/Qwen3.6-27B",
+      "name": "Qwen 3.6 27B",
       "category": "CHAT",
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "supportsTextStreaming": true,
       "supportsToolStreaming": false,
@@ -32,31 +33,32 @@
       "supportsReasoning": false,
       "temperatureTopPExclusive": false,
       "modalities": [
-        "text"
+        "text",
+        "image"
       ],
       "sortOrder": 2,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "Mistral Mixtral family"
+      "description": "Qwen 3.6 27B"
     },
     {
-      "modelId": "code-llama-70b-instruct",
-      "name": "Code Llama 70B",
-      "category": "CODE",
+      "modelId": "deepseek-ai/DeepSeek-V4-Pro",
+      "name": "DeepSeek V4 Pro",
+      "category": "REASONING",
       "supportsVision": false,
       "supportsTools": true,
       "supportsTextStreaming": true,
       "supportsToolStreaming": false,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text"
       ],
-      "sortOrder": 10,
+      "sortOrder": 3,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "High-end code Llama model"
+      "description": "DeepSeek V4 Pro"
     }
   ]
 }

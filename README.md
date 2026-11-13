@@ -4,6 +4,8 @@ Public catalogue of LLM models that Lunnoa can seed. Each provider has its own f
 
 The default source is the `main` branch of this repository. A superadmin can point a deployment at another GitHub or GitLab repository that uses the same layout.
 
+The list was refreshed on 13 November 2026. Models released before 13 November 2025 are not included. A model whose provider has already shut the endpoint down is not included either. Models that are still callable, but announced for shutdown, stay in the file with `isDeprecated` and `supportEndsAt`.
+
 ## Layout
 
 `catalogue.json` lists the providers. Each provider folder contains `models.json`.

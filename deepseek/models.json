@@ -2,10 +2,10 @@
   "providerSlug": "deepseek",
   "models": [
     {
-      "modelId": "deepseek-v3.2",
-      "name": "DeepSeek V3.2",
+      "modelId": "deepseek-flash",
+      "name": "DeepSeek Flash",
       "category": "CHAT",
-      "supportsVision": false,
+      "supportsVision": true,
       "supportsTools": true,
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
@@ -13,126 +13,36 @@
       "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
-        "text"
+        "text",
+        "image"
       ],
       "sortOrder": 1,
       "isRecommended": true,
       "isDeprecated": false,
-      "description": "DeepSeek V3.2 family focused on agents and reasoning"
+      "description": "DeepSeek-V4.1-Flash. Vision, tools, and thinking mode. 1M context",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 384000
     },
     {
-      "modelId": "deepseek-chat",
-      "name": "DeepSeek Chat",
+      "modelId": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
       "category": "CHAT",
       "supportsVision": false,
       "supportsTools": true,
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": false,
       "modalities": [
         "text"
       ],
       "sortOrder": 2,
-      "isRecommended": false,
+      "isRecommended": true,
       "isDeprecated": false,
-      "description": "DeepSeek Chat model"
-    },
-    {
-      "modelId": "deepseek-reasoner",
-      "name": "DeepSeek Reasoner",
-      "category": "REASONING",
-      "supportsVision": false,
-      "supportsTools": false,
-      "supportsTextStreaming": false,
-      "supportsToolStreaming": false,
-      "supportsTemperature": false,
-      "supportsReasoning": true,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 3,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "DeepSeek reasoning model"
-    },
-    {
-      "modelId": "deepseek-r1-1.5b",
-      "name": "DeepSeek R1 1.5B",
-      "category": "CHAT",
-      "supportsVision": false,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": false,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 10,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Small open-weight R1 variant"
-    },
-    {
-      "modelId": "deepseek-r1-7b",
-      "name": "DeepSeek R1 7B",
-      "category": "CHAT",
-      "supportsVision": false,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": false,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 11,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Mid-size R1 variant for local inference"
-    },
-    {
-      "modelId": "deepseek-r1-14b",
-      "name": "DeepSeek R1 14B",
-      "category": "CHAT",
-      "supportsVision": false,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": false,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 12,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Popular mid-size R1 variant"
-    },
-    {
-      "modelId": "deepseek-r1-32b",
-      "name": "DeepSeek R1 32B",
-      "category": "CHAT",
-      "supportsVision": false,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": false,
-      "supportsTemperature": true,
-      "supportsReasoning": false,
-      "temperatureTopPExclusive": false,
-      "modalities": [
-        "text"
-      ],
-      "sortOrder": 13,
-      "isRecommended": false,
-      "isDeprecated": false,
-      "description": "Larger R1 variant"
+      "description": "DeepSeek-V4-Pro. Tools and thinking mode. Vision is not supported. 1M context",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 384000
     }
   ]
 }

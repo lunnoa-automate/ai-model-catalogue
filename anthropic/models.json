@@ -2,6 +2,94 @@
   "providerSlug": "anthropic",
   "models": [
     {
+      "modelId": "claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": false,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 1,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Demanding reasoning and long-horizon agentic work. Adaptive thinking is always on",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "modelId": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": false,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 2,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Default for most workloads: long-running agentic coding and knowledge work",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "modelId": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": false,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 3,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Best combination of speed and intelligence in the current lineup",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "modelId": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": false,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 4,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Fastest current model for high-volume classification, extraction, and routing",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 128000
+    },
+    {
       "modelId": "claude-opus-4-7",
       "name": "Claude Opus 4.7",
       "category": "CHAT",
@@ -10,16 +98,16 @@
       "supportsTextStreaming": true,
       "supportsToolStreaming": true,
       "supportsTemperature": true,
-      "supportsReasoning": false,
+      "supportsReasoning": true,
       "temperatureTopPExclusive": true,
       "modalities": [
         "text",
         "image"
       ],
-      "sortOrder": 1,
-      "isRecommended": true,
+      "sortOrder": 10,
+      "isRecommended": false,
       "isDeprecated": false,
-      "description": "Most capable generally available model for complex reasoning and agentic coding (1M context, adaptive thinking)",
+      "description": "Previous Opus generation, still within the last year",
       "maxContextTokens": 1000000,
       "maxOutputTokens": 128000
     },
@@ -38,34 +126,12 @@
         "text",
         "image"
       ],
-      "sortOrder": 2,
-      "isRecommended": true,
-      "isDeprecated": false,
-      "description": "Best combination of speed and intelligence; extended and adaptive thinking (1M context)",
-      "maxContextTokens": 1000000,
-      "maxOutputTokens": 64000
-    },
-    {
-      "modelId": "claude-haiku-4-5-20251001",
-      "name": "Claude Haiku 4.5",
-      "category": "CHAT",
-      "supportsVision": true,
-      "supportsTools": true,
-      "supportsTextStreaming": true,
-      "supportsToolStreaming": true,
-      "supportsTemperature": true,
-      "supportsReasoning": true,
-      "temperatureTopPExclusive": true,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "sortOrder": 3,
+      "sortOrder": 11,
       "isRecommended": false,
       "isDeprecated": false,
-      "description": "Fastest model with near-frontier intelligence; extended thinking (200K context)",
-      "maxContextTokens": 200000,
-      "maxOutputTokens": 64000
+      "description": "Previous Sonnet generation, still within the last year",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 128000
     }
   ]
 }
