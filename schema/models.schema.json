@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lunnoa-automate/ai-model-catalogue/schema/models.schema.json",
+  "title": "Provider model catalogue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["providerSlug", "models"],
+  "properties": {
+    "providerSlug": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "models": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/model" }
+    }
+  },
+  "$defs": {
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modelId",
+        "name",
+        "category",
+        "supportsVision",
+        "supportsTools",
+        "supportsTextStreaming",
+        "supportsToolStreaming",
+        "supportsTemperature",
+        "supportsReasoning",
+        "temperatureTopPExclusive",
+        "modalities",
+        "sortOrder",
+        "isRecommended",
+        "isDeprecated"
+      ],
+      "properties": {
+        "modelId": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "description": { "type": "string" },
+        "category": {
+          "enum": ["CHAT", "REASONING", "EMBEDDING", "IMAGE_GEN", "SPEECH", "CODE", "MULTIMODAL"]
+        },
+        "supportsVision": { "type": "boolean" },
+        "supportsTools": { "type": "boolean" },
+        "supportsTextStreaming": { "type": "boolean" },
+        "supportsToolStreaming": { "type": "boolean" },
+        "supportsTemperature": { "type": "boolean" },
+        "supportsReasoning": { "type": "boolean" },
+        "temperatureTopPExclusive": { "type": "boolean" },
+        "maxContextTokens": { "type": "integer", "minimum": 1 },
+        "maxOutputTokens": { "type": "integer", "minimum": 1 },
+        "modalities": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "sortOrder": { "type": "integer", "minimum": 0 },
+        "isRecommended": { "type": "boolean" },
+        "isDeprecated": { "type": "boolean" },
+        "deprecationMessage": { "type": "string", "maxLength": 255 },
+        "supportEndsAt": { "type": "string", "format": "date" },
+        "replacedByModelId": { "type": "string", "minLength": 1, "maxLength": 100 }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "providerSlug": "xai",
+  "models": [
+    {
+      "modelId": "grok-4",
+      "name": "Grok 4",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 1,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "xAI Grok latest generation reasoning model"
+    },
+    {
+      "modelId": "grok-3",
+      "name": "Grok 3",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 10,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Earlier Grok generation - coding-capable"
+    },
+    {
+      "modelId": "grok-3-mini",
+      "name": "Grok 3 Mini",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 11,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Mini variant for fast queries"
+    },
+    {
+      "modelId": "grok-2-latest",
+      "name": "Grok 2",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 20,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Grok 2 model"
+    },
+    {
+      "modelId": "grok-2-vision-latest",
+      "name": "Grok 2 Vision",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 21,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Grok 2 with vision support"
+    },
+    {
+      "modelId": "grok-realtime",
+      "name": "Grok Realtime",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 30,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Grok productized model for realtime Q&A"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "providerSlug": "perplexity",
+  "models": [
+    {
+      "modelId": "sonar-pro",
+      "name": "Sonar Pro",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 1,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Perplexity Sonar Pro - search-grounded"
+    },
+    {
+      "modelId": "sonar",
+      "name": "Sonar",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 2,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Perplexity Sonar"
+    },
+    {
+      "modelId": "perplexity-openai-router",
+      "name": "OpenAI Router",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 10,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Routes to OpenAI models + adds citation & retrieval"
+    },
+    {
+      "modelId": "perplexity-anthropic-router",
+      "name": "Anthropic Router",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 11,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Routes to Anthropic models + citations"
+    }
+  ]
+}

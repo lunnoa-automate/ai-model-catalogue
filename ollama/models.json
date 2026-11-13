@@ -1,0 +1,119 @@
+{
+  "providerSlug": "ollama",
+  "models": [
+    {
+      "modelId": "llama3.3",
+      "name": "Llama 3.3",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 1,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Meta Llama 3.3 via Ollama"
+    },
+    {
+      "modelId": "llama3.2",
+      "name": "Llama 3.2",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 2,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Meta Llama 3.2 via Ollama"
+    },
+    {
+      "modelId": "qwen2.5",
+      "name": "Qwen 2.5",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 3,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Qwen 2.5 via Ollama"
+    },
+    {
+      "modelId": "phi3",
+      "name": "Phi-3",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 4,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Microsoft Phi-3 via Ollama"
+    },
+    {
+      "modelId": "mistral",
+      "name": "Mistral",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 5,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Mistral via Ollama"
+    },
+    {
+      "modelId": "codellama",
+      "name": "Code Llama",
+      "category": "CODE",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 10,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Code Llama via Ollama"
+    }
+  ]
+}

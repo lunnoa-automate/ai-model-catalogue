@@ -1,0 +1,672 @@
+{
+  "providerSlug": "featherless",
+  "models": [
+    {
+      "modelId": "deepseek-ai/DeepSeek-V4-Pro",
+      "name": "DeepSeek V4 Pro",
+      "category": "REASONING",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 1,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "DeepSeek V4 Pro — flagship reasoning",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "deepseek-ai/DeepSeek-V4-Flash",
+      "name": "DeepSeek V4 Flash",
+      "category": "REASONING",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 2,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "DeepSeek V4 Flash — fast reasoning",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3.6-35B-A3B",
+      "name": "Qwen 3.6 35B A3B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 3,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Qwen 3.6 MoE — high capability",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3.6-27B",
+      "name": "Qwen 3.6 27B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 4,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Qwen 3.6 dense 27B",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "moonshotai/Kimi-K2.6",
+      "name": "Kimi K2.6",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 5,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Moonshot Kimi K2.6",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "openai/gpt-oss-120b",
+      "name": "GPT-OSS 120B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 6,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Open-weight GPT-OSS 120B",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen2.5-7B-Instruct",
+      "name": "Qwen 2.5 7B Instruct",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 7,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Compact Qwen 2.5 instruct",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3-32B",
+      "name": "Qwen 3 32B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 8,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Qwen 3 with native tool calling",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "google/gemma-4-31B-it",
+      "name": "Gemma 4 31B IT",
+      "category": "MULTIMODAL",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 10,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Google Gemma 4 31B instruct — multimodal reasoning",
+      "maxContextTokens": 262144
+    },
+    {
+      "modelId": "google/gemma-4-31B",
+      "name": "Gemma 4 31B",
+      "category": "MULTIMODAL",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 11,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Google Gemma 4 31B base — multimodal",
+      "maxContextTokens": 262144
+    },
+    {
+      "modelId": "google/gemma-4-E4B-it",
+      "name": "Gemma 4 E4B IT",
+      "category": "MULTIMODAL",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "sortOrder": 12,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Google Gemma 4 E4B instruct — compact multimodal",
+      "maxContextTokens": 131072
+    },
+    {
+      "modelId": "google/gemma-4-26B-A4B-it",
+      "name": "Gemma 4 26B A4B IT",
+      "category": "MULTIMODAL",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 13,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Google Gemma 4 26B MoE instruct — multimodal reasoning",
+      "maxContextTokens": 262144
+    },
+    {
+      "modelId": "google/gemma-4-E2B-it",
+      "name": "Gemma 4 E2B IT",
+      "category": "MULTIMODAL",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "sortOrder": 14,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Google Gemma 4 E2B instruct — compact multimodal",
+      "maxContextTokens": 131072
+    },
+    {
+      "modelId": "google/gemma-4-E2B",
+      "name": "Gemma 4 E2B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 15,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Google Gemma 4 E2B base",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "google/gemma-4-E4B",
+      "name": "Gemma 4 E4B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 16,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Google Gemma 4 E4B base",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "zai-org/GLM-5.1",
+      "name": "GLM 5.1",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 16,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Zhipu GLM 5.1",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "meta-llama/Llama-3.1-8B-Instruct",
+      "name": "Llama 3.1 8B Instruct",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 17,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Meta Llama 3.1 8B instruct",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+      "name": "Llama 3.1 70B Instruct",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 18,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Meta Llama 3.1 70B instruct",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3.5-9B",
+      "name": "Qwen 3.5 9B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 19,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Qwen 3.5 9B",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3.5-4B",
+      "name": "Qwen 3.5 4B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 20,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Qwen 3.5 4B",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "openai/gpt-oss-20b",
+      "name": "GPT-OSS 20B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 21,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Open-weight GPT-OSS 20B",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "MiniMaxAI/MiniMax-M2.7",
+      "name": "MiniMax M2.7",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 22,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "MiniMax M2.7",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "name": "Qwen 3 Coder 30B A3B Instruct",
+      "category": "CODE",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 23,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Qwen 3 coder MoE instruct",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/WebWorld-8B",
+      "name": "WebWorld 8B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 24,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Qwen WebWorld 8B",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "nvidia/Gemma-4-31B-IT-NVFP4",
+      "name": "Gemma 4 31B IT NVFP4",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 25,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "NVIDIA-quantized Gemma 4 31B instruct",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "NousResearch/Hermes-3-Llama-3.1-8B",
+      "name": "Hermes 3 Llama 3.1 8B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 26,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Nous Hermes 3 on Llama 3.1 8B",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "mistralai/Mistral-7B-Instruct-v0.2",
+      "name": "Mistral 7B Instruct v0.2",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 27,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Mistral 7B instruct (8K context)",
+      "maxContextTokens": 8192
+    },
+    {
+      "modelId": "mistralai/Mistral-7B-Instruct-v0.3",
+      "name": "Mistral 7B Instruct v0.3",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 28,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Mistral 7B instruct v0.3",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen2.5-72B-Instruct",
+      "name": "Qwen 2.5 72B Instruct",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 29,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Large Qwen 2.5 instruct",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "name": "DeepSeek R1 Distill Llama 70B",
+      "category": "REASONING",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": false,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 30,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "DeepSeek R1 distilled on Llama 70B",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3-0.6B",
+      "name": "Qwen 3 0.6B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 40,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Tiny Qwen 3 model",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3-1.7B",
+      "name": "Qwen 3 1.7B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 41,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Small Qwen 3 model",
+      "maxContextTokens": 32768
+    },
+    {
+      "modelId": "Qwen/Qwen3-Embedding-0.6B",
+      "name": "Qwen 3 Embedding 0.6B",
+      "category": "EMBEDDING",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": false,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 50,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Qwen 3 text embedding model",
+      "maxContextTokens": 32768
+    }
+  ]
+}

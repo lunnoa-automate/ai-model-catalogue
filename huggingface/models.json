@@ -1,0 +1,62 @@
+{
+  "providerSlug": "huggingface",
+  "models": [
+    {
+      "modelId": "meta-llama-3-70b-instruct",
+      "name": "Llama 3 70B Instruct",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 1,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Meta Llama 3 instruct"
+    },
+    {
+      "modelId": "mistral-mixtral-8x7b",
+      "name": "Mistral Mixtral 8x7B",
+      "category": "CHAT",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 2,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Mistral Mixtral family"
+    },
+    {
+      "modelId": "code-llama-70b-instruct",
+      "name": "Code Llama 70B",
+      "category": "CODE",
+      "supportsVision": false,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": false,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "sortOrder": 10,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "High-end code Llama model"
+    }
+  ]
+}

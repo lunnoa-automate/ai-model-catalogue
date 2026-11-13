@@ -1,0 +1,71 @@
+{
+  "providerSlug": "anthropic",
+  "models": [
+    {
+      "modelId": "claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": true,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 1,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Most capable generally available model for complex reasoning and agentic coding (1M context, adaptive thinking)",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "modelId": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": true,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 2,
+      "isRecommended": true,
+      "isDeprecated": false,
+      "description": "Best combination of speed and intelligence; extended and adaptive thinking (1M context)",
+      "maxContextTokens": 1000000,
+      "maxOutputTokens": 64000
+    },
+    {
+      "modelId": "claude-haiku-4-5-20251001",
+      "name": "Claude Haiku 4.5",
+      "category": "CHAT",
+      "supportsVision": true,
+      "supportsTools": true,
+      "supportsTextStreaming": true,
+      "supportsToolStreaming": true,
+      "supportsTemperature": true,
+      "supportsReasoning": true,
+      "temperatureTopPExclusive": true,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "sortOrder": 3,
+      "isRecommended": false,
+      "isDeprecated": false,
+      "description": "Fastest model with near-frontier intelligence; extended thinking (200K context)",
+      "maxContextTokens": 200000,
+      "maxOutputTokens": 64000
+    }
+  ]
+}

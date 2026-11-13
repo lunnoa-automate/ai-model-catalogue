@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "providers": [
+    {
+      "slug": "openai",
+      "path": "openai/models.json"
+    },
+    {
+      "slug": "anthropic",
+      "path": "anthropic/models.json"
+    },
+    {
+      "slug": "gemini",
+      "path": "gemini/models.json"
+    },
+    {
+      "slug": "xai",
+      "path": "xai/models.json"
+    },
+    {
+      "slug": "deepseek",
+      "path": "deepseek/models.json"
+    },
+    {
+      "slug": "featherless",
+      "path": "featherless/models.json"
+    },
+    {
+      "slug": "perplexity",
+      "path": "perplexity/models.json"
+    },
+    {
+      "slug": "ollama",
+      "path": "ollama/models.json"
+    },
+    {
+      "slug": "huggingface",
+      "path": "huggingface/models.json"
+    }
+  ]
+}
