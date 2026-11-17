@@ -36,6 +36,10 @@
     {
       "slug": "huggingface",
       "path": "huggingface/models.json"
+    },
+    {
+      "slug": "gravitee",
+      "path": "gravitee/models.json"
     }
   ]
 }
