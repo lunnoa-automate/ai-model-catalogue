@@ -59,6 +59,46 @@
       "isRecommended": false,
       "isDeprecated": false,
       "description": "DeepSeek V4 Pro"
+    },
+    {
+      "modelId": "BAAI/bge-m3",
+      "name": "BGE-M3",
+      "category": "EMBEDDING",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": false,
+      "supportsToolStreaming": false,
+      "supportsTemperature": false,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "isDeprecated": false,
+      "sortOrder": 100,
+      "isRecommended": true,
+      "description": "Multilingual embedding model for self-hosted TEI or vLLM. 1024 dimensions, up to 8192 tokens.",
+      "maxContextTokens": 8192
+    },
+    {
+      "modelId": "intfloat/multilingual-e5-large",
+      "name": "Multilingual E5 Large",
+      "category": "EMBEDDING",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": false,
+      "supportsToolStreaming": false,
+      "supportsTemperature": false,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "isDeprecated": false,
+      "sortOrder": 101,
+      "isRecommended": false,
+      "description": "Multilingual embedding model for self-hosted TEI or vLLM. 1024 dimensions, up to 512 tokens.",
+      "maxContextTokens": 512
     }
   ]
 }
