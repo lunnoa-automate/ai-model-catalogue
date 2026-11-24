@@ -99,6 +99,26 @@
       "isRecommended": false,
       "description": "Multilingual embedding model for self-hosted TEI or vLLM. 1024 dimensions, up to 512 tokens.",
       "maxContextTokens": 512
+    },
+    {
+      "modelId": "BAAI/bge-reranker-v2-m3",
+      "name": "BGE Reranker v2 M3",
+      "category": "RERANK",
+      "supportsVision": false,
+      "supportsTools": false,
+      "supportsTextStreaming": false,
+      "supportsToolStreaming": false,
+      "supportsTemperature": false,
+      "supportsReasoning": false,
+      "temperatureTopPExclusive": false,
+      "modalities": [
+        "text"
+      ],
+      "isDeprecated": false,
+      "sortOrder": 110,
+      "isRecommended": true,
+      "description": "Multilingual cross-encoder re-ranker for self-hosted TEI, vLLM or Infinity. Up to 8192 tokens.",
+      "maxContextTokens": 8192
     }
   ]
 }
