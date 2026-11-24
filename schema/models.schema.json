@@ -41,7 +41,7 @@
         "name": { "type": "string", "minLength": 1, "maxLength": 100 },
         "description": { "type": "string" },
         "category": {
-          "enum": ["CHAT", "REASONING", "EMBEDDING", "IMAGE_GEN", "SPEECH", "CODE", "MULTIMODAL"]
+          "enum": ["CHAT", "REASONING", "EMBEDDING", "RERANK", "IMAGE_GEN", "SPEECH", "CODE", "MULTIMODAL"]
         },
         "supportsVision": { "type": "boolean" },
         "supportsTools": { "type": "boolean" },

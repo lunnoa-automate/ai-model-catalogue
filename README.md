@@ -15,6 +15,16 @@ Embedding models for knowledge notebooks are exempt from the release-date rule, 
 
 Lunnoa only lists these models. The SuperAdmin still has to run a server that serves them and pick one as the default embedding model.
 
+## Re-rank models
+
+Re-rank models (category `RERANK`) re-order knowledge search results before they reach the chat model. They are exempt from the release-date rule for the same reason as embedding models. The catalogue lists:
+
+- `BAAI/bge-reranker-v2-m3` (Hugging Face model id, for self-hosted TEI, vLLM or Infinity): multilingual cross-encoder, up to 8192 tokens.
+
+Only catalogue models can be selected as the platform re-ranker. The SuperAdmin runs the server and picks the model in Admin → System Settings → Knowledge.
+
+Lunnoa versions without the `RERANK` category skip these models with a warning when they read the catalogue. Versions older than that reject the whole catalogue, so deploy a version that knows `RERANK` before you merge a `RERANK` model.
+
 ## Layout
 
 `catalogue.json` lists the providers. Each provider folder contains `models.json`.
@@ -60,7 +70,7 @@ Boolean flags are stored explicitly. Token limits are omitted when unknown.
 | `modelId` | Provider id sent to the API. |
 | `name` | Label shown in Lunnoa. |
 | `description` | Short explanation. |
-| `category` | `CHAT`, `REASONING`, `EMBEDDING`, `IMAGE_GEN`, `SPEECH`, `CODE`, or `MULTIMODAL`. |
+| `category` | `CHAT`, `REASONING`, `EMBEDDING`, `RERANK`, `IMAGE_GEN`, `SPEECH`, `CODE`, or `MULTIMODAL`. |
 | `supportsVision` | Accepts image input. |
 | `supportsTools` | Can call tools. |
 | `supportsTextStreaming` | Streams text. |
