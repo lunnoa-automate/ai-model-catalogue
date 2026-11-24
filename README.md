@@ -6,6 +6,15 @@ The default source is the `main` branch of this repository. A superadmin can poi
 
 The list was refreshed on 13 November 2026. Models released before 13 November 2025 are not included. A model whose provider has already shut the endpoint down is not included either. Models that are still callable, but announced for shutdown, stay in the file with `isDeprecated` and `supportEndsAt`.
 
+## Embedding models
+
+Embedding models for knowledge notebooks are exempt from the release-date rule, because the ones that run well on-prem are older. The catalogue lists the multilingual models whose tokenizers ship in Lunnoa's Document Parser image:
+
+- `bge-m3` (Ollama) and `BAAI/bge-m3` (Hugging Face model id, for self-hosted TEI or vLLM): 1024 dimensions, up to 8192 tokens.
+- `intfloat/multilingual-e5-large` (Hugging Face model id): 1024 dimensions, up to 512 tokens.
+
+Lunnoa only lists these models. The SuperAdmin still has to run a server that serves them and pick one as the default embedding model.
+
 ## Layout
 
 `catalogue.json` lists the providers. Each provider folder contains `models.json`.
