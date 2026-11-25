@@ -15,9 +15,33 @@ Embedding models for knowledge notebooks are exempt from the release-date rule, 
 
 Lunnoa only lists these models. The SuperAdmin still has to run a server that serves them and pick one as the default embedding model.
 
+### The `embedding` block
+
+`EMBEDDING` models can carry an optional `embedding` object. Lunnoa uses it to offer only vector sizes the model supports, to reject other sizes, and to pick the tokenizer that cuts document chunks.
+
+```json
+"embedding": {
+  "defaultDimensions": 1024,
+  "minDimensions": 32,
+  "maxDimensions": 1024,
+  "tokenizer": "Qwen/Qwen3-Embedding-0.6B"
+}
+```
+
+| Field | Meaning |
+| --- | --- |
+| `defaultDimensions` | Size preselected in Lunnoa. Required. |
+| `minDimensions`, `maxDimensions` | The model accepts any size in this range. Lunnoa sends the chosen size as `dimensions` on embed calls. |
+| `allowedDimensions` | The model only produces these sizes. With one size, Lunnoa sends no `dimensions` value. |
+| `tokenizer` | Hugging Face repo id of the tokenizer for chunking. Lunnoa uses it only when the Document Parser image has it baked in. Models that share a tokenizer name the same repo. |
+
+Give either `minDimensions` and `maxDimensions` or `allowedDimensions`, not both. `defaultDimensions` must be inside the range or in the list.
+
+Lunnoa versions without this field ignore it. A malformed block is ignored with a warning and the model still syncs.
+
 Cloud embedding models, which send document text to the provider:
 
-- `Qwen/Qwen3-Embedding-0.6B`, `Qwen/Qwen3-Embedding-4B` and `Qwen/Qwen3-Embedding-8B` (Featherless, `/v1/embeddings`): multilingual, up to 1024, 2560 and 4096 dimensions, up to 32768 tokens. Their tokenizer is not in the Document Parser image, so Lunnoa cuts chunks with the parser's default tokenizer. Use them only where sending documents to Featherless is allowed. The same open weights can be self-hosted instead.
+- `Qwen/Qwen3-Embedding-0.6B`, `Qwen/Qwen3-Embedding-4B` and `Qwen/Qwen3-Embedding-8B` (Featherless, `/v1/embeddings`): multilingual, up to 1024, 2560 and 4096 dimensions, up to 32768 tokens. The three models share one tokenizer, `Qwen/Qwen3-Embedding-0.6B`, which ships in the Document Parser image since lunnoa_automate#641. Use them only where sending documents to Featherless is allowed. The same open weights can be self-hosted instead.
 
 ## Re-rank models
 

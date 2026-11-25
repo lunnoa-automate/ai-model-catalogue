@@ -62,8 +62,46 @@
         "isDeprecated": { "type": "boolean" },
         "deprecationMessage": { "type": "string", "maxLength": 255 },
         "supportEndsAt": { "type": "string", "format": "date" },
-        "replacedByModelId": { "type": "string", "minLength": 1, "maxLength": 100 }
+        "replacedByModelId": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "embedding": { "$ref": "#/$defs/embedding" }
       }
+    },
+    "dimension": { "type": "integer", "minimum": 1, "maximum": 16384 },
+    "embedding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["defaultDimensions"],
+      "properties": {
+        "defaultDimensions": { "$ref": "#/$defs/dimension" },
+        "minDimensions": { "$ref": "#/$defs/dimension" },
+        "maxDimensions": { "$ref": "#/$defs/dimension" },
+        "allowedDimensions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dimension" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "tokenizer": {
+          "type": "string",
+          "maxLength": 100,
+          "pattern": "^[A-Za-z0-9][\\w.-]*/[\\w.-]+$"
+        }
+      },
+      "oneOf": [
+        {
+          "required": ["minDimensions", "maxDimensions"],
+          "not": { "required": ["allowedDimensions"] }
+        },
+        {
+          "required": ["allowedDimensions"],
+          "not": {
+            "anyOf": [
+              { "required": ["minDimensions"] },
+              { "required": ["maxDimensions"] }
+            ]
+          }
+        }
+      ]
     }
   }
 }

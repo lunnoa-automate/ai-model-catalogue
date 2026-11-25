@@ -374,7 +374,13 @@
       "sortOrder": 100,
       "isRecommended": true,
       "description": "Multilingual embedding model served by the Featherless cloud API (/v1/embeddings). Up to 1024 dimensions (smaller sizes supported), up to 32768 tokens. Sends document text to Featherless.",
-      "maxContextTokens": 32768
+      "maxContextTokens": 32768,
+      "embedding": {
+        "defaultDimensions": 1024,
+        "minDimensions": 32,
+        "maxDimensions": 1024,
+        "tokenizer": "Qwen/Qwen3-Embedding-0.6B"
+      }
     },
     {
       "modelId": "Qwen/Qwen3-Embedding-4B",
@@ -394,7 +400,13 @@
       "sortOrder": 101,
       "isRecommended": false,
       "description": "Multilingual embedding model served by the Featherless cloud API (/v1/embeddings). Up to 2560 dimensions (smaller sizes supported), up to 32768 tokens. Sends document text to Featherless.",
-      "maxContextTokens": 32768
+      "maxContextTokens": 32768,
+      "embedding": {
+        "defaultDimensions": 1024,
+        "minDimensions": 32,
+        "maxDimensions": 2560,
+        "tokenizer": "Qwen/Qwen3-Embedding-0.6B"
+      }
     },
     {
       "modelId": "Qwen/Qwen3-Embedding-8B",
@@ -414,7 +426,13 @@
       "sortOrder": 102,
       "isRecommended": false,
       "description": "Multilingual embedding model served by the Featherless cloud API (/v1/embeddings). Up to 4096 dimensions (smaller sizes supported), up to 32768 tokens. Sends document text to Featherless.",
-      "maxContextTokens": 32768
+      "maxContextTokens": 32768,
+      "embedding": {
+        "defaultDimensions": 1024,
+        "minDimensions": 32,
+        "maxDimensions": 4096,
+        "tokenizer": "Qwen/Qwen3-Embedding-0.6B"
+      }
     }
   ]
 }
