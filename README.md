@@ -49,6 +49,26 @@ Re-rank models (category `RERANK`) re-order knowledge search results before they
 
 - `BAAI/bge-reranker-v2-m3` (Hugging Face model id, for self-hosted TEI, vLLM or Infinity): multilingual cross-encoder, up to 8192 tokens.
 
+### The `rerank` block
+
+`RERANK` models can carry an optional `rerank` object. Lunnoa uses it to cut passages the model cannot read, instead of the re-rank server cutting them silently, and to split large candidate lists into several calls.
+
+```json
+"rerank": {
+  "maxInputTokens": 8192,
+  "multilingual": true,
+  "maxDocumentsPerCall": 32
+}
+```
+
+| Field | Meaning |
+| --- | --- |
+| `maxInputTokens` | Query plus one passage, in model tokens. Required. Lunnoa cuts each passage to fit before the call. |
+| `multilingual` | The model ranks languages other than English well. Shown on the SuperAdmin re-rank card. |
+| `maxDocumentsPerCall` | Passages per API call. Lunnoa sends more in several calls and merges the scores. `32` matches the default `--max-client-batch-size` of TEI. |
+
+Lunnoa versions without this field ignore it. A malformed block is ignored with a warning and the model still syncs.
+
 Only catalogue models can be selected as the platform re-ranker. The SuperAdmin runs the server and picks the model in Admin → System Settings → Knowledge.
 
 Lunnoa versions without the `RERANK` category skip these models with a warning when they read the catalogue. Versions older than that reject the whole catalogue, so deploy a version that knows `RERANK` before you merge a `RERANK` model.
