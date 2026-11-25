@@ -15,6 +15,10 @@ Embedding models for knowledge notebooks are exempt from the release-date rule, 
 
 Lunnoa only lists these models. The SuperAdmin still has to run a server that serves them and pick one as the default embedding model.
 
+Cloud embedding models, which send document text to the provider:
+
+- `Qwen/Qwen3-Embedding-0.6B`, `Qwen/Qwen3-Embedding-4B` and `Qwen/Qwen3-Embedding-8B` (Featherless, `/v1/embeddings`): multilingual, up to 1024, 2560 and 4096 dimensions, up to 32768 tokens. Their tokenizer is not in the Document Parser image, so Lunnoa cuts chunks with the parser's default tokenizer. Use them only where sending documents to Featherless is allowed. The same open weights can be self-hosted instead.
+
 ## Re-rank models
 
 Re-rank models (category `RERANK`) re-order knowledge search results before they reach the chat model. They are exempt from the release-date rule for the same reason as embedding models. The catalogue lists:
