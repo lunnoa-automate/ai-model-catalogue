@@ -132,7 +132,12 @@
       "sortOrder": 110,
       "isRecommended": true,
       "description": "Multilingual cross-encoder re-ranker for self-hosted TEI, vLLM or Infinity. Up to 8192 tokens.",
-      "maxContextTokens": 8192
+      "maxContextTokens": 8192,
+      "rerank": {
+        "maxInputTokens": 8192,
+        "multilingual": true,
+        "maxDocumentsPerCall": 32
+      }
     }
   ]
 }
