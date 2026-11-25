@@ -78,7 +78,14 @@
       "sortOrder": 100,
       "isRecommended": true,
       "description": "Multilingual embedding model for self-hosted TEI or vLLM. 1024 dimensions, up to 8192 tokens.",
-      "maxContextTokens": 8192
+      "maxContextTokens": 8192,
+      "embedding": {
+        "defaultDimensions": 1024,
+        "allowedDimensions": [
+          1024
+        ],
+        "tokenizer": "BAAI/bge-m3"
+      }
     },
     {
       "modelId": "intfloat/multilingual-e5-large",
@@ -98,7 +105,14 @@
       "sortOrder": 101,
       "isRecommended": false,
       "description": "Multilingual embedding model for self-hosted TEI or vLLM. 1024 dimensions, up to 512 tokens.",
-      "maxContextTokens": 512
+      "maxContextTokens": 512,
+      "embedding": {
+        "defaultDimensions": 1024,
+        "allowedDimensions": [
+          1024
+        ],
+        "tokenizer": "intfloat/multilingual-e5-large"
+      }
     },
     {
       "modelId": "BAAI/bge-reranker-v2-m3",

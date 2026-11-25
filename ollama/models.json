@@ -116,7 +116,14 @@
       "sortOrder": 100,
       "isRecommended": true,
       "description": "Multilingual embedding model (German, French, Italian, English). 1024 dimensions, up to 8192 tokens.",
-      "maxContextTokens": 8192
+      "maxContextTokens": 8192,
+      "embedding": {
+        "defaultDimensions": 1024,
+        "allowedDimensions": [
+          1024
+        ],
+        "tokenizer": "BAAI/bge-m3"
+      }
     }
   ]
 }
